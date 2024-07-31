@@ -1,7 +1,7 @@
-const character = "#";
-const count = 8;
+const character = prompt("Digite um caractere: ");
+const count = prompt("Digite a quantidade de vezes: ");
 const rows = [];
-let inverted = true;
+let inverted = confirm("Deseja inverter a pirâmide? ");
 
 function padRow(rowNumber, rowCount) {
   return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
